@@ -1,27 +1,15 @@
-const links = [
-  { href: '#summary', label: 'Summary' },
-  { href: '#glossary', label: 'Glossary' },
-  { href: '#vram', label: 'VRAM' },
-  { href: '#rent', label: 'Rent' },
-  { href: '#buy', label: 'Buy' },
-  { href: '#calculator', label: 'Break-even' },
-]
-
-export default function Nav() {
-  return (
-    <header className="nav">
-      <div className="wrap nav__inner">
-        <a className="brand" href="#top" style={{ textDecoration: 'none', color: 'inherit' }}>
-          <span className="brand__mark">M</span>
-          <span className="brand__name">MedGemma<span> · Hosting Guide</span></span>
-        </a>
-        <nav className="nav__links hide-sm">
-          {links.map((l) => (
-            <a key={l.href} href={l.href}>{l.label}</a>
-          ))}
-        </nav>
-        <a className="nav__cta" href="#calculator">Break-even calc →</a>
-      </div>
-    </header>
-  )
-}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="MedGemma Hosting Guide — Cloud vs. Own Hardware. VRAM math, GPU pricing, and a rent-vs-buy break-even calculator." />
+    <meta name="theme-color" content="#1e90ff" />
+    <title>MedGemma Hosting Guide — Cloud vs. Own Hardware</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
